@@ -18,6 +18,7 @@ export default function Register() {
     const data = await res.json();
     if (res.ok) {
       setMessage('User created successfully!');
+      alert('User created successfully!')
     } else {
       setMessage(data.error || 'Something went wrong');
     }
